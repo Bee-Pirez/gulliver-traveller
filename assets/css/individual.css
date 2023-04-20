@@ -43,6 +43,10 @@ h3{
     font-size: ;
 }
 
+p{
+    font-size: ;
+}
+
 /************** Body *********/
 
 body{
@@ -85,13 +89,47 @@ body{
     
 }
 
-/************** section *********/
+/************** Main *********/
 
 
 
 /************** Article *********/
 
+.comments{
 
+}
+
+.comments_title{
+
+}
+
+.comments_posts{
+
+}
+
+.posts_pub{
+
+}
+
+.pub_perfil{
+
+}
+
+.perfil_image{
+
+}
+
+.image_person{
+
+}
+
+.perfil_data{
+
+}
+
+.pub_text{
+
+}
 
 /************** Aside *********/
 
@@ -99,6 +137,37 @@ body{
 
 /************** Footer *********/
 
+.footer{
 
+}
+
+.footer_block{
+
+}
+
+.block_logo{
+
+}
+
+.logo_image{
+
+}
+
+.block_info{
+
+}
+
+.block_title{
+
+}
+
+.block_contact{
+
+}
+
+.block_media{
+
+}
 
 /************** Responsive *********/
+
