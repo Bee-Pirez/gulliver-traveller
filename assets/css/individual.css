@@ -91,7 +91,85 @@ body{
 
 /************** Main *********/
 
+/************** Section | Gallery *********/
 
+.gallery{
+
+}
+
+.gallery_title{
+
+}
+
+.title_local{
+
+}
+
+.title_tag{
+
+}
+
+.tag_star{
+
+}
+
+.tag_local{
+
+}
+
+.tag_save{
+
+}
+
+.gallery_image{
+
+}
+
+.image_paradise{
+
+}
+
+.paradise_full{
+
+}
+
+.paradise_quarter{
+
+}
+
+/************** Section | Information *********/
+
+.information{
+
+}
+
+.information_data{
+
+}
+
+.data_title{
+
+}
+
+.data_subtitle{
+
+}
+
+.data_services{
+
+}
+
+.services_topic{
+
+}
+
+.data_button{
+
+}
+
+.information_maps{
+
+}
 
 /************** Article *********/
 
@@ -101,6 +179,14 @@ body{
 
 .comments_title{
 
+}
+
+.title_main{
+
+}
+
+.title_secondary{
+    
 }
 
 .comments_posts{
@@ -128,6 +214,10 @@ body{
 }
 
 .pub_text{
+
+}
+
+.comments_button{
 
 }
 
@@ -162,6 +252,14 @@ body{
 }
 
 .block_contact{
+
+}
+
+.contact_phone{
+
+}
+
+.contact_email{
 
 }
 
