@@ -1,0 +1,104 @@
+/* ctrl; (comentários) */
+
+/************** Tipografia *********/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/************** Reset *********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: white;
+    background-image:linear-gradient(#050230, #168CA6) ;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+:root{
+    --color-primary: #0e0a7e;
+    --color-secondary: #f25c05;
+    --color-tertiary: #147e95;
+    --border-radius: 5px;
+    --l-gradiente: rgba(19, 2, 48, 1.0), rgba(22, 140, 165. 1.0);
+}
+
+h1{
+    font-size: ;
+}
+
+h2{
+    font-size: ;
+}
+
+h3{
+    font-size: ;
+}
+
+/************** Body *********/
+
+body{
+    background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
+}
+
+/************** Header *********/
+
+.header{
+
+}
+
+.header_logo{
+
+}
+
+/* nav */
+
+.menu{
+
+}
+
+.menu_navigation{
+
+}
+
+.navigation_item{
+
+}
+
+.menu_login{
+
+}
+
+.login_signin{
+
+}
+
+.login_signup{
+    
+}
+
+/************** section *********/
+
+
+
+/************** Article *********/
+
+
+
+/************** Aside *********/
+
+
+
+/************** Footer *********/
+
+
+
+/************** Responsive *********/
