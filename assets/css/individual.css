@@ -27,7 +27,7 @@ ul, ol{
     --color-primary: #0e0a7e;
     --color-secondary: #f25c05;
     --color-tertiary: #147e95;
-    --border-radius: 5px;
+    --border-radius: 20px;
     --l-gradiente: rgba(19, 2, 48, 1.0), rgba(22, 140, 165. 1.0);
 }
 
@@ -53,40 +53,94 @@ body{
     background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
 }
 
+.header{
+    padding: 34px 40px;
+} 
+
+
+.gallery, .information, .comments{
+    padding: 0px 40px;
+}
+
+.footer{
+    padding: 34px 40px;
+}
+
 /************** Header *********/
 
 .header{
-
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header_logo{
+    width: 192px;
+    height: 108px;
 
 }
 
 /* nav */
 
 .menu{
-
+    
 }
 
 .menu_navigation{
+    display: flex;
+}
 
+.menu_navigation ul{
+    display: flex;
+}
+
+.menu_navigation li{
+    margin: 0px 32px;
 }
 
 .navigation_item{
+    color: white;
+    text-decoration: none;
+}
 
+.navigation_item:hover{
+    color: var(--color-secondary);
 }
 
 .menu_login{
-
+    display: flex;
 }
 
 .login_signin{
+    background-color: transparent;
+    color: white;
+    padding: 7px;
+    margin-right: 8px;
+    border-radius: var(--border-radius);
+    border: 1px solid white;
+    text-decoration: none;
+}
 
+.login_signin:hover{
+    background-color: white;
+    color: black;
 }
 
 .login_signup{
-    
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 7px;
+    margin-left: 8px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+.login_signup:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: white;
 }
 
 /************** Main *********/
@@ -94,19 +148,21 @@ body{
 /************** Section | Gallery *********/
 
 .gallery{
-
+    width: 100%
 }
 
 .gallery_title{
-
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 0px;
 }
 
 .title_local{
-
+   
 }
 
 .title_tag{
-
+    display: flex;
 }
 
 .tag_star{
@@ -121,12 +177,20 @@ body{
 
 }
 
-.gallery_image{
+.tag_star, .tag_local, .tag_save{
+    margin: 0px 52px;
+}
 
+
+.gallery_image{
+    width: 100px;
+    display: flex;
 }
 
 .image_paradise{
-
+    width: 50%;
+    display: flex;
+    padding: 75px;
 }
 
 .paradise_full{
@@ -140,7 +204,10 @@ body{
 /************** Section | Information *********/
 
 .information{
-
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .information_data{
@@ -228,11 +295,17 @@ body{
 /************** Footer *********/
 
 .footer{
-
+    width: 100%;
+    background-color:var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: ; */
 }
 
 .footer_block{
-
+    width: 33.33%;
+    /* padding: ; */
 }
 
 .block_logo{
