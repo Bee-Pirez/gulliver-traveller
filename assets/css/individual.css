@@ -17,6 +17,7 @@ html{
     scroll-behavior: smooth;
     color: white;
     background-image:linear-gradient(#050230, #168CA6) ;
+    font-size: ;
 }
 
 ul, ol{
@@ -32,11 +33,11 @@ ul, ol{
 }
 
 h1{
-    font-size: ;
+    font-size: 56px;
 }
 
 h2{
-    font-size: ;
+    font-size: 48px;
 }
 
 h3{
@@ -74,6 +75,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
 }
 
 .header_logo{
@@ -153,6 +155,7 @@ body{
 
 .gallery_title{
     display: flex;
+    text-align: center;
     justify-content: space-between;
     padding: 84px 0px;
 }
@@ -163,6 +166,7 @@ body{
 
 .title_tag{
     display: flex;
+    text-align: end;
 }
 
 .tag_star{
@@ -185,6 +189,8 @@ body{
 .gallery_image{
     width: 100px;
     display: flex;
+    background-position: center;
+    background-size: cover;
 }
 
 .image_paradise{
@@ -212,26 +218,51 @@ body{
 
 .information_data{
     width: 50%;
+    align-items: center;
 }
 
-.data_title{
+.data_resume{
+    margin-bottom: 123px;
+}
+
+.resume_title{
 
 }
 
-.data_subtitle{
+.resume_subtitle{
+    margin: 32px 0px;
+}
 
+.resume_subtitle ul{
+    display: flex;
+}
+
+.resume_subtitle li{
+    margin-right: 16px;
+}
+
+.data_subtitle p{
+    margin-right: 0px 60px;
 }
 
 .data_services{
+    padding-bottom: 123px;
+}
 
+.services_title{
+    width: 100%;
 }
 
 .services_topic{
-
+    width: 50%;
 }
 
 .data_button{
-
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+    padding: 25px 25px;
+    font-size: 24px;
+    color: white;
 }
 
 .information_maps{
@@ -241,7 +272,7 @@ body{
 }
 
 iframe{
-    width: 895px;
+    width: 100%;
     height: 720px;
     border-radius: var(--border-radius);
 }
@@ -273,7 +304,7 @@ iframe{
 }
 
 .pub_perfil{
-
+    display: flex;
 }
 
 .perfil_image{
@@ -285,11 +316,12 @@ iframe{
 }
 
 .perfil_data{
-
+    margin: 0px 16px;
 }
 
 .pub_text{
-
+    margin-top: 16px;
+    font-size: 24px;
 }
 
 .comments_button{
@@ -307,25 +339,30 @@ iframe{
     width: 100%;
     background-color:var(--color-primary);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-size: 20px;
     /* padding: ; */
 }
 
 .footer_block{
     width: 33.33%;
+    
     /* padding: ; */
 }
 
 .block_logo{
-
+    margin-bottom: 24px;
 }
 
 .logo_image{
-
+    width: 244.21px;
+    height: 52px;
 }
 
 .block_info{
+    margin-bottom: 32px;
+}
+
+.block_copywrite{
 
 }
 
@@ -334,7 +371,7 @@ iframe{
 }
 
 .block_contact{
-
+    margin-top: 32px;
 }
 
 .contact_phone{
@@ -346,7 +383,28 @@ iframe{
 }
 
 .block_media{
+    
+}
 
+.media_title{
+
+}
+
+.media_icon{
+
+}
+
+.media_icon ul{
+    display: flex;
+    margin-top: 32px;
+}
+
+.media_icon li{
+    margin-right: 16px;
+}
+
+.icon_item{
+    color: white;
 }
 
 /************** Responsive *********/
