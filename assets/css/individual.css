@@ -54,16 +54,16 @@ body{
 }
 
 .header{
-    padding: 34px 40px;
+    padding: 34px 132px;
 } 
 
 
-.gallery, .information, .comments{
-    padding: 0px 40px;
+.gallery, .information, article{
+    padding: 160px 132px;
 }
 
 .footer{
-    padding: 34px 40px;
+    padding: 34px 132px;
 }
 
 /************** Header *********/
@@ -211,7 +211,7 @@ body{
 }
 
 .information_data{
-
+    width: 50%;
 }
 
 .data_title{
@@ -235,7 +235,15 @@ body{
 }
 
 .information_maps{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
 
+iframe{
+    width: 895px;
+    height: 720px;
+    border-radius: var(--border-radius);
 }
 
 /************** Article *********/
@@ -261,7 +269,7 @@ body{
 }
 
 .posts_pub{
-
+    padding: 56px 0px;
 }
 
 .pub_perfil{
@@ -285,7 +293,8 @@ body{
 }
 
 .comments_button{
-
+    text-align: center;
+    justify-content: center;
 }
 
 /************** Aside *********/
