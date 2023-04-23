@@ -60,6 +60,7 @@ body{
 
 
 .gallery, .information, article{
+    margin-bottom: 160px;
     padding: 0px 132px;
 }
 
@@ -196,8 +197,9 @@ body{
 
 
 .gallery_image{
-    width: 100px;
+    width: 100%;
     display: grid;
+    justify-content: center;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -211,7 +213,7 @@ body{
 }
 
 .paradise_full{
-    width: 500px;
+    width: 100%;
     height: 530px;
     border-radius: var(--border-radius);
 }
@@ -299,7 +301,7 @@ body{
 }
 
 iframe{
-    width: 100%;
+    width: 90%;
     height: 720px;
     border-radius: var(--border-radius);
 }
@@ -456,7 +458,41 @@ iframe{
 
 /************** Responsive *********/
 
-@media (max-width: 1080px){
+@media (max-width: 555px){
+
+
+
+/************** Body *********/
+
+
+
+/************** Header *********/
+
+
+
+/* nav */
+
+
+
+/************** Main *********/
+
+/************** Section | Gallery *********/
+
+
+
+/************** Section | Information *********/
+
+
+
+/************** Article *********/
+
+
+
+/************** Aside *********/
+
+ 
+
+/************** Footer *********/
 
 
 
