@@ -113,10 +113,9 @@ body{
     color: var(--color-secondary);
 }
 
-.emphasis{
+.navigation_item:active{
     margin-top: 10px;
     border-bottom: 1px solid white;
-
 }
 
 .menu_login{
@@ -338,7 +337,7 @@ iframe{
 /***** Article ****/
 
 .comments{
-
+    margin-bottom: 50px;
 }
 
 .comments_title{
@@ -357,7 +356,7 @@ iframe{
 .amount_comments{
     margin-left: 20px;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .comments_posts{
@@ -365,7 +364,7 @@ iframe{
 }
 
 .posts_pub{
-    padding: 56px 0px;
+    padding: 40px 0px;
 }
 
 .pub_perfil{
@@ -377,7 +376,9 @@ iframe{
 }
 
 .image_person{
-
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .perfil_data{
@@ -386,8 +387,8 @@ iframe{
 }
 
 .pub_text{
-    margin-top: 16px;
-    font-size: 24px;
+    margin-top: 10px;
+    font-size: 1.0rem;
 }
 
 .button_comments{
@@ -401,15 +402,17 @@ iframe{
 .comments_button{
     background-color: transparent;
     font-size: 16px;
-    border: 1px solid white;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: var(--border-radius);
 }
 
-.button_extension{
-    color: white;
-    margin: 16px 16px;
-    text-decoration: none;
+.comments_button:hover{
+    background-color: #ffffff;
+    color: #168CA6;
 }
+
 
 /***** Aside ****/
 
@@ -422,14 +425,18 @@ iframe{
     background-color:var(--color-quaternary);
     display: flex;
     font-size: 20px;
-    /* padding: ; */
+    justify-content: space-between;
 }
 
 .footer_block{
-    width: 33.33%;
+    width: auto;
     display: flex;
     flex-direction: column;
     margin-right: 100px;
+}
+
+.col_rodape_um{
+    width: 35%;
 }
 
 .block_logo{
@@ -437,32 +444,35 @@ iframe{
 }
 
 .logo_image{
-    width: 244.21px;
-    height: 52px;
+    width: 192px;
 }
 
 .block_info{
-    margin-bottom: 32px;
+    margin-bottom: 0.9rem;
+    font-weight: 200;
 }
 
 .block_copywrite{
-
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
 .block_title{
-
-}
-
-.block_contact{
-    margin-top: 32px;
-}
-
-.contact_phone{
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
-.contact_email{
+.block_contact{
+}
 
+.contact_phone{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact_email{
+    font-size: 1rem;
 }
 
 .block_media{
@@ -470,7 +480,8 @@ iframe{
 }
 
 .media_title{
-
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .media_icon{
@@ -494,7 +505,7 @@ iframe{
 
 /************** Responsive *********/
 
-@media (max-width: 555px){
+@media (max-width: 768px){
 
 
 
