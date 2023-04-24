@@ -1,10 +1,10 @@
 /* ctrl; (comentários) */
 
-/************** Tipografia *********/
+/***** Tipografia ****/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/************** Reset *********/
+/***** Reset ****/
 
 * {
     margin: 0;
@@ -33,34 +33,28 @@ ul, ol{
 }
 
 h1{
-    font-size: 56px;
+    font-size: 2.5rem;
 }
 
 h2{
-    font-size: 48px;
+    font-size: 2.0rem;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 p{
     font-size: 0.9rem;
 }
 
-/************** Body *********/
+/***** Body ****/
 
 body{
     background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
 }
 
-.header{
-    padding: 0px 132px;
-} 
-
-
-.gallery, .information, article{
-    margin-bottom: 160px;
+.header, .gallery, .information, article{
     padding: 0px 132px;
 }
 
@@ -68,7 +62,7 @@ body{
     padding: 34px 132px;
 }
 
-/************** Header *********/
+/***** Header ****/
 
 .header{
     background-color: #050230;
@@ -114,10 +108,9 @@ body{
     color: var(--color-secondary);
 }
 
-.emphasis{
+.navigation_item:active{
     margin-top: 10px;
     border-bottom: 1px solid white;
-
 }
 
 .menu_login{
@@ -126,47 +119,52 @@ body{
 
 .login_signin{
     background-color: transparent;
+    font-size: 15px;
     color: white;
-    padding: 7px;
+    padding: 7px 15px;
     margin-right: 8px;
     border-radius: var(--border-radius);
     border: 1px solid white;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .login_signin:hover{
     background-color: white;
     color: black;
+    transition: 0.2s;
 }
 
 .login_signup{
     background-color: var(--color-secondary);
+    font-size: 15px;
     color: white;
-    padding: 7px;
+    padding: 7px 15px;
     margin-left: 8px;
+    border: 1px solid var(--color-secondary);
     border-radius: var(--border-radius);
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .login_signup:hover{
     background-color: transparent;
     border: 1px solid var(--color-secondary);
     color: white;
+    transition: 0.2s;
 }
 
-/************** Main *********/
+/***** Main ****/
 
-/************** Section | Gallery *********/
+/***** Section | Gallery ****/
 
 .gallery{
-    width: 100%
+    width: 100%;
+    margin-bottom: 50px;
 }
 
-.gallery_title{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 84px 0px;
+.title_local{
+    width: 60%;
 }
 
 .title_local > h1{
@@ -177,30 +175,28 @@ body{
 .title_tag{
     display: flex;
     text-align: end;
+    width: 40%;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
 }
 
-.tag_star{
-    width: 80px;
+.tag{
+    margin-right: 8px;
 }
 
-.tag_local{
-
-}
-
-.tag_save{
-
+.tag > span{
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
 .tag_star, .tag_local, .tag_save{
-    margin: 0px 52px;
 }
 
-
 .gallery_image{
-    width: 100%;
+    width: 100px;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .image_paradise{
@@ -208,13 +204,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    width: 600px;
+    width: 575px;
     flex-direction: row;
 }
 
 .paradise_full{
-    width: 100%;
-    height: 530px;
+    width: 525px;
+    height: 510px;
     border-radius: var(--border-radius);
 }
 
@@ -224,10 +220,12 @@ body{
     border-radius: var(--border-radius);
 }
 
-/************** Section | Information *********/
+/***** Section | Information ****/
 
 .information{
     width: 100%;
+    height: 500px;
+    margin: 100px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -239,7 +237,7 @@ body{
 }
 
 .data_resume{
-    margin-bottom: 123px;
+    margin-bottom: 100px;
 }
 
 .resume_title{
@@ -263,10 +261,10 @@ body{
 }
 
 .data_services{
-    padding-bottom: 123px;
+    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
 }
 
@@ -277,8 +275,9 @@ body{
 
 .services_topic{
     padding: 16px 0px;
-    width: 45%;
-    font-size: 24px;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 400;
     display: flex;
 }
 
@@ -288,10 +287,17 @@ body{
 
 .data_button{
     background-color: var(--color-secondary);
-    border-radius: var(--border-radius);
-    padding: 8px 35px;
-    font-size: 24px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 1rem;
     color: white;
+    transition: 0.2s;
+}
+
+.data_button:hover{
+    background-color: transparent;
+    transition: 0.2s;
 }
 
 .information_maps{
@@ -301,15 +307,15 @@ body{
 }
 
 iframe{
-    width: 90%;
-    height: 720px;
+    width: 100%;
+    height: 100%;
     border-radius: var(--border-radius);
 }
 
-/************** Article *********/
+/***** Article ****/
 
 .comments{
-
+    margin-bottom: 50px;
 }
 
 .comments_title{
@@ -320,8 +326,15 @@ iframe{
 
 }
 
-.title_secondary{
-    
+.title_secondary > i{
+    margin: 0;
+    padding: 0;
+}
+
+.amount_comments{
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .comments_posts{
@@ -329,7 +342,7 @@ iframe{
 }
 
 .posts_pub{
-    padding: 56px 0px;
+    padding: 40px 0px;
 }
 
 .pub_perfil{
@@ -341,7 +354,9 @@ iframe{
 }
 
 .image_person{
-
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .perfil_data{
@@ -350,8 +365,8 @@ iframe{
 }
 
 .pub_text{
-    margin-top: 16px;
-    font-size: 24px;
+    margin-top: 10px;
+    font-size: 1.0rem;
 }
 
 .button_comments{
@@ -365,35 +380,41 @@ iframe{
 .comments_button{
     background-color: transparent;
     font-size: 16px;
-    border: 1px solid white;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: var(--border-radius);
 }
 
-.button_extension{
-    color: white;
-    margin: 16px 16px;
-    text-decoration: none;
+.comments_button:hover{
+    background-color: #ffffff;
+    color: #168CA6;
 }
 
-/************** Aside *********/
 
- 
+/***** Aside ****/
 
-/************** Footer *********/
+
+
+/***** Footer ****/
 
 .footer{
     width: 100%;
     background-color:var(--color-quaternary);
     display: flex;
     font-size: 20px;
-    /* padding: ; */
+    justify-content: space-between;
 }
 
 .footer_block{
-    width: 33.33%;
+    width: auto;
     display: flex;
     flex-direction: column;
     margin-right: 100px;
+}
+
+.col_rodape_um{
+    width: 35%;
 }
 
 .block_logo{
@@ -401,32 +422,35 @@ iframe{
 }
 
 .logo_image{
-    width: 244.21px;
-    height: 52px;
+    width: 192px;
 }
 
 .block_info{
-    margin-bottom: 32px;
+    margin-bottom: 0.9rem;
+    font-weight: 200;
 }
 
 .block_copywrite{
-
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
 .block_title{
-
-}
-
-.block_contact{
-    margin-top: 32px;
-}
-
-.contact_phone{
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
-.contact_email{
+.block_contact{
+}
 
+.contact_phone{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact_email{
+    font-size: 1rem;
 }
 
 .block_media{
@@ -434,7 +458,8 @@ iframe{
 }
 
 .media_title{
-
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .media_icon{
@@ -458,13 +483,21 @@ iframe{
 
 /************** Responsive *********/
 
-@media (max-width: 555px){
-
-
+@media (max-width: 768px){
 
 /************** Body *********/
 
+body{
+    background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
+}
 
+.header, .gallery, .information, article{
+    padding: 0px 60px;
+}
+
+.footer{
+    padding: 34px 60px;
+}
 
 /************** Header *********/
 
@@ -478,11 +511,84 @@ iframe{
 
 /************** Section | Gallery *********/
 
+.title_local{
+    width: 100%;
+    padding-top: 80px;
+}
 
+.title_local > h1{
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.title_tag{
+    display: flex;
+    text-align: start;
+    width: 100%;
+    padding: 16px 0px;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.gallery_image{
+    width: 100%;
+    padding: 64px 0px 0px 0px;
+    flex-direction: column;
+}
 
 /************** Section | Information *********/
 
+.information{
+    width: 100%;
+    height: 100%;
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.information_data{
+    width: 100%;
+    align-items: center;
+}
+
+.data_services{
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.services_topic{
+    padding: 16px 0px;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+}
+
+.services_topic i{
+    margin-right: 16px;
+}
+
+.data_button{
+    padding: 10px 25px;
+}
+
+.data_button:hover{
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.information_maps{
+    width: 100%;
+    height: 300px;
+    margin: 64px 0px;
+    text-align: center;
+}
 
 /************** Article *********/
 
@@ -490,10 +596,18 @@ iframe{
 
 /************** Aside *********/
 
- 
+
 
 /************** Footer *********/
 
+    .footer{
+        width: 100%;
+        flex-direction: column;
+    }
 
+    .footer_block{
+        width: 100%;
+        padding: 32px 0px;
+    }
 
 }
