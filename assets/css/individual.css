@@ -54,12 +54,7 @@ body{
     background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
 }
 
-.header{
-    padding: 0px 132px;
-} 
-
-
-.gallery, .information, article{
+.header, .gallery, .information, article{
     padding: 0px 132px;
 }
 
@@ -507,32 +502,213 @@ iframe{
 
 @media (max-width: 768px){
 
-
-
 /************** Body *********/
 
+    body{
+    }
 
+    .gallery, .information, article, .header{
+    }
+
+    .footer{
+    }
 
 /************** Header *********/
 
+    .header{
+    }
 
+    .header_logo{
+    }
 
 /* nav */
 
+    .menu{
+    }
 
+    .menu_navigation{
+    }
+
+    .menu_navigation ul{
+    }
+
+    .menu_navigation li{
+    }
+
+    .navigation_item{
+    }
+
+    .navigation_item:hover{
+    }
+
+    .navigation_item:active{
+    }
+
+    .menu_login{
+    }
+
+    .login_signin{
+    }
+
+    .login_signin:hover{
+    }
+
+    .login_signup{
+    }
+
+    .login_signup:hover{
+    }
 
 /************** Main *********/
 
 /************** Section | Gallery *********/
 
+    .gallery{
+    }
 
+    .gallery_title{
+    }
+
+    .title_local{
+    }
+
+    .title_local > h1{
+    }
+
+    .title_tag{
+    }
+
+    .tag{
+    }
+
+    .tag > span{
+    }
+
+    .tag_star{
+    }
+
+    .tag_local{
+    }
+
+    .tag_save{
+    }
+
+    .tag_star, .tag_local, .tag_save{
+    }
+
+    .gallery_image{
+    }
+
+    .image_paradise{
+    }
+
+    .paradise_full{
+    }
+
+    .paradise_quarter{
+    }
 
 /************** Section | Information *********/
 
+    .information{
+    }
 
+    .information_data{
+    }
+
+    .data_resume{
+    }
+
+    .resume_title{
+
+    }
+
+    .resume_subtitle{
+    }
+
+    .resume_subtitle ul{
+    }
+
+    .resume_subtitle li{
+    }
+
+    .data_subtitle p{
+    }
+
+    .data_services{
+    }
+
+    .services_title{
+    }
+
+    .services_topic{
+    }
+
+    .services_topic i{
+    }
+
+    .data_button{
+    }
+
+    .data_button:hover{
+    }
+
+    .information_maps{
+    }
+
+    iframe{
+    }
 
 /************** Article *********/
 
+    .comments{
+    }
+
+    .comments_title{
+
+    }
+
+    .title_main{
+
+    }
+
+    .title_secondary > i{
+    }
+
+    .amount_comments{
+    }
+
+    .comments_posts{
+
+    }
+
+    .posts_pub{
+    }
+
+    .pub_perfil{
+    }
+
+    .perfil_image{
+
+    }
+
+    .image_person{
+    }
+
+    .perfil_data{
+    }
+
+    .pub_text{
+    }
+
+    .button_comments{
+    }
+
+    .comments_button{
+    }
+
+    .comments_button:hover{
+    }
 
 
 /************** Aside *********/
@@ -541,6 +717,56 @@ iframe{
 
 /************** Footer *********/
 
+    .footer{
+    }
 
+    .footer_block{
+    }
+
+    .col_rodape_um{
+    }
+
+    .block_logo{
+    }
+
+    .logo_image{
+    }
+
+    .block_info{
+    }
+
+    .block_copywrite{
+    }
+
+    .block_title{
+    }
+
+    .block_contact{
+    }
+
+    .contact_phone{
+    }
+
+    .contact_email{
+    }
+
+    .block_media{
+        
+    }
+
+    .media_title{
+    }
+
+    .media_icon{
+    }
+
+    .media_icon ul{
+    }
+
+    .media_icon li{
+    }
+
+    .icon_item{
+    }
 
 }
