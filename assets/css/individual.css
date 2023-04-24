@@ -95,12 +95,12 @@ body{
 }
 
 .menu_navigation li{
-    margin: 0px 32px;
     font-size: 0.9rem;
 }
 
 .navigation_item{
     color: white;
+    margin: 0px 32px;
     text-decoration: none;
 }
 
@@ -154,17 +154,26 @@ body{
     transition: 0.2s;
 }
 
+.menu-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
 /***** Main ****/
 
 /***** Section | Gallery ****/
 
 .gallery{
     width: 100%;
-    margin-bottom: 50px;
+    margin: 50px 0px;
 }
 
 .title_local{
-    width: 60%;
+    width: 50%;
 }
 
 .title_local > h1{
@@ -174,10 +183,8 @@ body{
 
 .title_tag{
     display: flex;
-    text-align: end;
-    width: 40%;
-    justify-content: end;
-    align-items: center;
+    flex-direction: row-reverse;
+    width: 50%;
     gap: 40px;
 }
 
@@ -505,7 +512,37 @@ body{
 
 /* nav */
 
+.menu_navigation{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--color-quaternary);
+    margin-top: -1100px;
+    transition: var(--transition);
+}
 
+.menu_navigation li {
+    margin: 30px auto;
+}
+
+.menu_navigation a {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+
+}
+
+.mobile_menu {
+    margin-top: 0px;
+}
+
+.menu_button{
+    display: block;
+}
 
 /************** Main *********/
 
