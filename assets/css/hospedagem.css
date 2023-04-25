@@ -69,6 +69,10 @@ p {
   gap: 2rem;
 }
 
+.header li:hover {
+  color: var(--color-secondary);
+}
+
 .header_login {
   display: flex;
   flex-direction: row;
@@ -318,6 +322,10 @@ strong {
     justify-content: center;
   }
 
+  .barra_pesquisa{
+    padding: 2rem;
+  }
+
   .navegation_paises{
     padding: 2rem 0;
   }
@@ -332,7 +340,7 @@ strong {
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    gap: 1rem;
+    gap: 4rem;
   }
 
   .contatos{
