@@ -1,94 +1,347 @@
-/*****tipografia*****/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-/*****fim-tipografia*****/
-
-:root{
-  --color-primary: #0e0a7e;
-  --color-secondary: #f25c05;
-  --color-tertiary: #147e95;
-  --color-quaternary: #03011D;
-}
-
-/*****reset*****/
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   color: white;
-  background-image:linear-gradient(#050230, #168CA6) ;
+  background-image: linear-gradient(#050230, #168ca6);
 }
 
-h1{
-  font-size: 2.5rem;
+body {
+  min-width: 429px;
+  width: 100%;
 }
 
-h2{
-  font-size: 2.0rem;
+:root {
+  --color-primary: #0e0a7e;
+  --color-secondary: #f25c05;
+  --color-tertiary: #147e95;
+  --color-quaternary: #03011d;
+  --color-text: #ffffff;
 }
 
-h3{
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
   font-size: 1.5rem;
 }
 
-p{
-  font-size: 0.9rem;
+p {
+  font-size: 1.25rem;
 }
 
-/***** Body ****/
+/* header */
 
-.header, .hospedagens{
-  padding: 0px 132px;
-}
-
-.footer{
-  padding: 34px 132px;
-}
-
-
-/***** Header ****/
-
-.header{
+.header {
   background-color: #050230;
   color: white;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 20px;
+  justify-content: space-around;
+  font-size: 1.25rem;
+  flex-wrap: wrap;
 }
 
-.header_logo{
-  width: 192px;
-  height: 108px;
-
+.header_logo {
+  width: 12rem;
+  height: 6.75rem;
 }
 
-/*****fim-Header ****/
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 
-/*****hospedagens****/
+.header_login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
 
-.hospedagens{
+#entrar {
+  color: var(--color-text);
+  background-color: transparent;
+  text-decoration: none;
+  border: solid transparent;
+  transition: 0.2s;
+}
+
+#entrar:hover {
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+#cadastrar {
+  background-color: var(--color-secondary);
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2rem;
+  border: 2px solid var(--color-secondary);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.2s;
+}
+
+#cadastrar:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+  border: 2px solid var(--color-secondary);
+}
+
+/* banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/hospedagem/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner_texto {
   display: flex;
   flex-direction: column;
-  gap: 160px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 80%;
 }
 
-.hoteis{
+strong {
+  color: var(--color-secondary);
+}
+
+/* barra de pesquisa */
+.barra_pesquisa{
   display: flex;
-  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-top: -24px;
 }
 
-.hoteis_apartment{
-  width: 353px;
-  height: 335px;
+.input_search{
+  width: 100%;
+  height: 3rem;
+  color:var(--color-text);
+  font-size: 1rem;
+  border-radius: 1.625rem;
+  border: none;
+  background-color: var(--color-text);
+  padding-left: 26px;
 }
 
-/*****fim-hospedagens****/
+#dados{
+  display: flex;
+  width: 1040px;
+  background-color: var(--color-text);
+  border: 2px solid var(--color-secondary); 
+  border-radius: 26px;
+}
+
+.button_submit {
+  height:  48px;
+  width: 180px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 26px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button_submit:hover {
+  background-color: var(--color-secondary);
+}
+
+.input:focus, .input:focus-visible {
+  outline: 0;
+}
+
+/* menu países */
+
+.navegation_paises ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 64px 0;
+}
+
+.navegation_paises li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navegation_paises a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: var(--color-text);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.navegation_paises i {
+  font-size: 3.25rem;
+}
+
+/* hospedagens */
+
+.hospedagens {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding-bottom: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoteis {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hoteis_regiao{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hoteis_apartment {
+  width: 22.06rem;
+  height: 20.81rem;
+}
+
+.nome_avaliacao{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+
+/* rodapé */
+
+.footer_conteudo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--color-quaternary);
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-text);
+  padding: 64px 0;
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 33.37rem;
+}
+
+.marca i {
+  font-size: 1.37rem;
+  padding-right: 0.75rem;
+}
+
+.footer_logo {
+  width: 15.25rem;
+  height: 3.25rem;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+ 
+}
+
+.contatos i {
+  padding-right: 1rem;
+  font-size: 1.37rem;
+}
+
+.sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  
+}
+
+.sociais ul {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.sociais i {
+  padding-right: 1rem;
+  font-size: 1.37rem;
+}
+
+/* media */
+@media(max-width: 900px) {
+  .header{
+    justify-content: center;
+  }
+
+  .navegation_paises{
+    padding: 2rem 0;
+  }
+
+  .navegation_paises ul{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1rem;
+  }
+
+  .footer_conteudo{
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .contatos{
+    width: 100%;
+  }
+
+  .sociais{
+    width: 100%;
+  }
+
+}
+
