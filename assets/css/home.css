@@ -24,12 +24,8 @@ body {
 
 }
 
-.header_logo{
-
-}
-
 .logo_image{
-
+    
 }
 
 .header_account{
@@ -41,6 +37,11 @@ body {
 .navigation{
 
 }
+
+.active{
+    color: #f25c05;
+}
+
 
 /************** Main *********/
 
