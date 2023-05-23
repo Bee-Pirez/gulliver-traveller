@@ -1,0 +1,243 @@
+/* ctrl; (comentários) */
+
+/************** Tipografia *********/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/************** Reset *********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************** Body *********/
+
+body {
+    background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
+}
+
+/************** Header *********/
+
+.header{
+
+}
+
+.header_logo{
+
+}
+
+.logo_image{
+
+}
+
+.header_account{
+
+}
+
+/* nav */
+
+.navigation{
+
+}
+
+/************** Main *********/
+
+.main{
+
+}
+
+/************** section | Banner *********/
+
+.main_banner{
+
+}
+
+.banner_text{
+
+}
+
+/************** section | Search *********/
+
+.main_search{
+
+}
+
+.search_bar{
+
+}
+
+/************** section | About Us *********/
+
+.main_aboutus{
+
+}
+
+.aboutus_image{
+
+}
+
+.image_adventurous{
+
+}
+
+.aboutus_text{
+
+}
+
+.text_button{
+
+}
+
+/************** section | Services *********/
+
+.main_services{
+
+}
+
+.services_text{
+
+}
+
+.services_topics{
+
+}
+
+.services_column{
+
+}
+
+/************** section | emphasis *********/
+
+.main_emphasis{
+
+}
+
+.emphasis_text{
+
+}
+
+.emphasis_carousel{
+
+}
+
+/************** section | video *********/
+
+.main_video{
+
+}
+
+/************** section | Blog *********/
+
+.main_blog{
+
+}
+
+.blog_text{
+
+}
+
+.blog_post{
+
+}
+
+.post_image{
+
+}
+
+.image_landscape{
+
+}
+
+.post_information{
+
+}
+
+.information_title{
+
+}
+
+.information_subtitle{
+
+}
+
+.information_description{
+
+}
+
+.blog_emphasis{
+
+}
+
+.emphasis_title{
+
+}
+
+.emphasis_subtitle{
+
+}
+
+.emphasis_description{
+
+}
+
+/************** Article | Newsletter *********/
+
+.newsletter{
+
+}
+
+.newsletter_image{
+
+}
+
+.image_mailbox{
+
+}
+
+.newsletter_forms{
+
+}
+
+.forms_text{
+
+}
+
+.forms_box{
+
+}
+
+/************** Section | Button Top *********/
+
+.button_top{
+
+}
+
+/************** Footer *********/
+
+.footer{
+
+}
+
+.footer_traveller{
+
+}
+
+.traveller_logo{
+
+}
+
+.traveller_copyright{
+
+}
+
+.footer_topics{
+
+}
+
+/************** Responsive *********/
+
+@media screen {
+    
+}
