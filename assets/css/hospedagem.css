@@ -322,6 +322,14 @@ strong {
     justify-content: center;
   }
 
+  .navegation{
+    display: none;
+}
+
+  .header_login{
+    padding-left: 32px;
+}
+
   .barra_pesquisa{
     padding: 2rem;
   }
