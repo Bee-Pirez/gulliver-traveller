@@ -1,92 +1,94 @@
-
 /* ctrl; (comentários) */
 
 /************** Tipografia *********/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /************** Reset *********/
-:root{
-    --cor-primaria: rgb(242, 92, 5);
-    --color-texto: rgb(255, 255, 255);
-    --cor-orangeL: rgb(254, 248, 230);
-  }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --cor-primaria: rgb(242, 92, 5);
+  --color-texto: rgb(255, 255, 255);
+  --cor-orangeL: rgb(254, 248, 230);
 }
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /************** Body *********/
 
 body {
+  width: 100%;
   scroll-behavior: smooth;
   color: white;
   background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
-  background-image: linear-gradient(180deg, #030110 2.6%, #050230 23.96%, #168CA6 100%);
+  background-image: linear-gradient(
+    180deg,
+    #030110 2.6%,
+    #050230 23.96%,
+    #168ca6 100%
+  );
 }
 
 /************** Header *********/
 /* nav */
-header{
+header {
   background-color: #010008;
 }
 
-.navbar-brand img{
-    width: 150px;
-  }
+.navbar-brand img {
+  width: 150px;
+}
 
+.nav-signin {
+  border: 2px solid var(--cor-primaria);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  gap: 10px;
+}
 
-.nav-signin{
-    border: 2px solid var(--cor-primaria);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px 25px;
-    gap: 10px;
-  }
-  
-  .nav-signin a{
-    text-decoration: none;
-    color: var(--cor-primaria);
-  }
-  
-  .nav-signup{
-    background-color: var(--cor-primaria);
-    border-radius: 20px;
-    border: 2px solid var(--cor-primaria);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px 25px;
-    gap: 10px;
-  }
-  
-  .nav-signup a{
-    text-decoration: none;
-    color: white;
-  }
+.nav-signin a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+.nav-signup {
+  background-color: var(--cor-primaria);
+  border-radius: 20px;
+  border: 2px solid var(--cor-primaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  gap: 10px;
+}
+
+.nav-signup a {
+  text-decoration: none;
+  color: white;
+}
 
 /************** Main *********/
 
-.main{
-
+.main {
 }
 
 /************** section | Banner *********/
 
-.main_banner{
+.main_banner {
   background-image: url(../images/home/Banner.svg);
   background-size: cover;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
 
-.banner_text{
+.banner_text {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -96,34 +98,32 @@ header{
 
 /************** section | Search *********/
 
-.main_search{
-
+.main_search {
 }
 
-.search_bar{
-
+.search_bar {
 }
 
 /************** section | About Us *********/
 
-.main_aboutus{
-
+.main_aboutus {
 }
 
-.aboutus_image{
+.aboutus_image {
 }
 
-.image_adventurous{
+.image_adventurous {
   border-radius: 10px;
 }
 
-.aboutus_text{
-display: flex;
-flex-direction: column;
-gap: 32px;
+.aboutus_text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
 }
 
-.text_button{
+.text_button {
   width: 296px;
   height: 48px;
   background-color: var(--cor-primaria);
@@ -140,11 +140,11 @@ gap: 32px;
 
 /************** section | Services *********/
 
-.main_services{
+.main_services {
   padding: 32px;
 }
 
-.services_text{
+.services_text {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -153,7 +153,7 @@ gap: 32px;
   gap: 32px;
 }
 
-.item i{
+.item i {
   background-color: var(--cor-orangeL);
   border-radius: 50px;
   margin: 20px;
@@ -164,130 +164,114 @@ gap: 32px;
 
 /************** section | emphasis *********/
 
-.main_emphasis{
-
+.main_emphasis {
+  padding: 32px;
 }
 
-.emphasis_text{
-
+.emphasis_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 32px;
+  gap: 32px;
 }
 
-.emphasis_carousel{
-
+.emphasis_carousel {
 }
 
 /************** section | video *********/
 
 /************** section | Blog *********/
 
-.main_blog{
-
+.main_blog {
+  padding: 32px;
 }
 
-.blog_text{
-
+.blog_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 32px;
+  gap: 32px;
 }
 
-.blog_post{
-
+.blog_post {
 }
 
-.post_image{
-
+.post_image {
 }
 
-.image_landscape{
-
+.image_landscape {
 }
 
-.post_information{
-
+.post_information {
 }
 
-.information_title{
-
+.information_title {
 }
 
-.information_subtitle{
-
+.information_subtitle {
 }
 
-.information_description{
-
+.information_description {
 }
 
-.blog_emphasis{
-
+.blog_emphasis {
 }
 
-.emphasis_title{
-
+.emphasis_title {
 }
 
-.emphasis_subtitle{
-
+.emphasis_subtitle {
 }
 
-.emphasis_description{
-
+.emphasis_description {
 }
 
 /************** Article | Newsletter *********/
 
-.newsletter{
-
+.newsletter {
 }
 
-.newsletter_image{
-
+.newsletter_image {
 }
 
-.image_mailbox{
-
+.image_mailbox {
 }
 
-.newsletter_forms{
-
+.newsletter_forms {
 }
 
-.forms_text{
-
+.forms_text {
 }
 
-.forms_box{
-
+.forms_box {
 }
 
 /************** Section | Button Top *********/
 
-.button_top{
-
+.button_top {
 }
 
 /************** Footer *********/
 
-.footer{
-
+.footer {
 }
 
-.footer_traveller{
-
+.footer_traveller {
 }
 
-.traveller_logo{
-
+.traveller_logo {
 }
 
-.traveller_copyright{
-
+.traveller_copyright {
 }
 
-.footer_topics{
-
+.footer_topics {
 }
 
 /************** Responsive *********/
-
 @media screen {
-    
 }
