@@ -1,3 +1,4 @@
+
 /* ctrl; (comentários) */
 
 /************** Tipografia *********/
@@ -5,12 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /************** Reset *********/
+:root{
+    --cor-primaria: rgb(242, 92, 5);
+    --color-texto: rgb(255, 255, 255);
+  }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 /************** Body *********/
 
@@ -19,28 +26,42 @@ body {
 }
 
 /************** Header *********/
-
-.header{
-
-}
-
-.logo_image{
-    
-}
-
-.header_account{
-
-}
+.navbar-brand img{
+    width: 150px;
+  }
 
 /* nav */
 
-.navigation{
-
-}
-
-.active{
-    color: #f25c05;
-}
+.nav-signin{
+    border: 2px solid var(--cor-primaria);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 25px;
+    gap: 10px;
+  }
+  
+  .nav-signin a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+  }
+  
+  .nav-signup{
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+    border: 2px solid var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 25px;
+    gap: 10px;
+  }
+  
+  .nav-signup a{
+    text-decoration: none;
+    color: white;
+  }
 
 
 /************** Main *********/
