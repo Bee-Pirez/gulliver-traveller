@@ -9,6 +9,7 @@
 :root{
     --cor-primaria: rgb(242, 92, 5);
     --color-texto: rgb(255, 255, 255);
+    --cor-orangeL: rgb(254, 248, 230);
   }
 
 * {
@@ -25,11 +26,15 @@ body {
   scroll-behavior: smooth;
   color: white;
   background-image: linear-gradient(var(--l-gradiente, --l-gradiente));
-  background-image: linear-gradient(#050230, #168ca6);
+  background-image: linear-gradient(180deg, #030110 2.6%, #050230 23.96%, #168CA6 100%);
 }
 
 /************** Header *********/
 /* nav */
+header{
+  background-color: #010008;
+}
+
 .navbar-brand img{
     width: 150px;
   }
@@ -75,11 +80,18 @@ body {
 /************** section | Banner *********/
 
 .main_banner{
-
+  background-image: url(../images/home/Banner.svg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 .banner_text{
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 250px;
 }
 
 /************** section | Search *********/
@@ -129,19 +141,25 @@ gap: 32px;
 /************** section | Services *********/
 
 .main_services{
-
+  padding: 32px;
 }
 
 .services_text{
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 32px;
+  gap: 32px;
 }
 
-.services_topics{
-
-}
-
-.services_column{
-
+.item i{
+  background-color: var(--cor-orangeL);
+  border-radius: 50px;
+  margin: 20px;
+  padding: 20px;
+  color: var(--cor-primaria);
+  font-size: 32px;
 }
 
 /************** section | emphasis *********/
@@ -159,10 +177,6 @@ gap: 32px;
 }
 
 /************** section | video *********/
-
-.main_video{
-
-}
 
 /************** section | Blog *********/
 
