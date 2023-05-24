@@ -5,16 +5,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /************** Reset *********/
-:root {
-  --cor-primaria: rgb(242, 92, 5);
-  --color-texto: rgb(255, 255, 255);
-  --cor-orangeL: rgb(254, 248, 230);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color-primary: rgb(14, 10, 126);              
+  --cor-secondary: rgb(242, 92, 5);
+  --color-X: #03011D;
+  --color-texto: rgb(255, 255, 255);
+  --color-orange: rgb(254, 248, 230);
+}
+
+ul, ol {
+  list-style: none;
 }
 
 /************** Body *********/
@@ -35,7 +42,7 @@ body {
 /************** Header *********/
 /* nav */
 header {
-  background-color: #010008;
+  padding: 0px 140px;
 }
 
 .navbar-brand img {
@@ -43,7 +50,7 @@ header {
 }
 
 .nav-signin {
-  border: 2px solid var(--cor-primaria);
+  border: 2px solid var(--cor-secondary);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -54,13 +61,13 @@ header {
 
 .nav-signin a {
   text-decoration: none;
-  color: var(--cor-primaria);
+  color: var(--cor-secondary);
 }
 
 .nav-signup {
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-secondary);
   border-radius: 20px;
-  border: 2px solid var(--cor-primaria);
+  border: 2px solid var(--cor-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +83,7 @@ header {
 /************** Main *********/
 
 .main {
+
 }
 
 /************** section | Banner *********/
@@ -126,9 +134,9 @@ header {
 .text_button {
   width: 296px;
   height: 48px;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-secondary);
   border-radius: 20px;
-  border: 2px solid var(--cor-primaria);
+  border: 2px solid var(--cor-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,11 +162,11 @@ header {
 }
 
 .item i {
-  background-color: var(--cor-orangeL);
+  background-color: var(--color-orange);
   border-radius: 50px;
   margin: 20px;
   padding: 20px;
-  color: var(--cor-primaria);
+  color: var(--cor-secondary);
   font-size: 32px;
 }
 
@@ -182,19 +190,33 @@ header {
 
 /************** section | video *********/
 
+.video{
+  padding: 0px 140px;
+}
+
 /************** section | Blog *********/
 
 .main_blog {
-  padding: 32px;
+  padding: 32px 140px;
+  display: block;
 }
 
 .blog_text {
   display: flex;
+  width: 100%;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding-bottom: 32px;
   gap: 32px;
+}
+
+.blog_column{
+  width: 50%;
+}
+
+.blog_posts{
+  display: flex;
 }
 
 .blog_post {
@@ -233,6 +255,10 @@ header {
 /************** Article | Newsletter *********/
 
 .newsletter {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 166px 140px;
 }
 
 .newsletter_image {
@@ -242,6 +268,7 @@ header {
 }
 
 .newsletter_forms {
+  text-align: left;
 }
 
 .forms_text {
@@ -258,18 +285,45 @@ header {
 /************** Footer *********/
 
 .footer {
+  background-color: var(--color-X);
+  padding: 67px 140px;
+  display: flex;
 }
 
 .footer_traveller {
+
 }
 
 .traveller_logo {
+  width: 150px;
+  padding-bottom: 27px;
 }
 
 .traveller_copyright {
 }
 
-.footer_topics {
+.footer_inst{
+    
+}
+
+.footer_inst ul{
+    display: block;
+}
+
+.footer_help{
+    
+}
+
+.footer_help ul{
+    display: block;
+}
+
+.footer_media{
+    
+}
+
+.footer_media ul{
+    display: flex;
 }
 
 /************** Responsive *********/
