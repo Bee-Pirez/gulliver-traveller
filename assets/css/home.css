@@ -185,8 +185,8 @@ header {
 }
 
 .button_about {
-background-color: var(--color-secondary);
-border-radius: 20px;
+  background-color: var(--color-secondary);
+  border-radius: 20px;
 }
 
 .button_about:hover {
@@ -378,72 +378,70 @@ border-radius: 20px;
   }
 }
 
-@media screen and (min-width:860px) {
-  .cards-wrapper{
+@media screen and (min-width: 860px) {
+  .cards-wrapper {
     display: flex;
   }
-  .card{
-    margin: 0 .5em;
-    width: calc(100%/4);
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 4);
     border: none;
     background-color: transparent;
     color: white;
   }
-  .image-wrapper{
+  .image-wrapper {
     height: 18vw;
     margin: 0 auto;
   }
 }
 
-.information-card{
+.information-card {
   display: flex;
   justify-content: space-between;
 }
 
-
-@media screen and (max-width:860px) and (min-width:567px) {
-  .card:nth-child(n+3):nth-child(-n+4){
+@media screen and (max-width: 860px) and (min-width: 567px) {
+  .card:nth-child(n + 3):nth-child(-n + 4) {
     display: none;
   }
 
-  .cards-wrapper{
+  .cards-wrapper {
     display: flex;
   }
 
-  .card{
-    margin: 0 .5em;
-    width: calc(100%/2);
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
     border: none;
   }
 
-  .image-wrapper{
+  .image-wrapper {
     height: 22vw;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width:567px) {
-  .card:not(:first-child){
+@media screen and (max-width: 567px) {
+  .card:not(:first-child) {
     display: none;
   }
 
-  .cards-wrapper{
+  .cards-wrapper {
     display: flex;
   }
 
-  .card{
+  .card {
     margin: 1em auto;
-    width: calc(100%/1,5);
+    width: calc(100% / 1, 5);
     border: none;
   }
-  .image-wrapper{
+  .image-wrapper {
     height: 22vw;
     margin: 0 auto;
   }
 }
 
-
-.image-wrapper img{
+.image-wrapper img {
   border-radius: 6px;
   max-width: 100%;
   max-height: 100%;
