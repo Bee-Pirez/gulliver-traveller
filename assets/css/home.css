@@ -14,9 +14,9 @@
 
 :root {
   --color-primary: rgb(14, 10, 126);              
-  --cor-secondary: rgb(242, 92, 5);
+  --color-secondary: rgb(242, 92, 5);
   --color-X: #03011D;
-  --color-texto: rgb(255, 255, 255);
+  --color-text: rgb(255, 255, 255);
   --color-orange: rgb(254, 248, 230);
 }
 
@@ -90,10 +90,14 @@ header {
 
 .main_banner {
   background-image: url(../images/home/Banner.svg);
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner_text {
@@ -105,8 +109,55 @@ header {
 }
 
 /************** section | Search *********/
+.search_bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-top: -80px;
+}
+
+.input_search{
+  width: 100%;
+  height: 3rem;
+  color:var(--color-text);
+  font-size: 1rem;
+  border-radius: 1.625rem;
+  border: none;
+  background-color: var(--color-text);
+  padding-left: 26px;
+}
+
+#dados{
+  display: flex;
+  width: 1040px;
+  background-color: var(--color-text);
+  border: 2px solid var(--color-secondary); 
+  border-radius: 26px;
+}
+
+.button_submit {
+  height:  48px;
+  width: 180px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 26px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button_submit:hover {
+  background-color: var(--color-secondary);
+}
+
+.input:focus, .input:focus-visible {
+  outline: 0;
+}
 
 .main_search {
+  margin: 60px;
 }
 
 .search_bar {
@@ -134,9 +185,9 @@ header {
 .text_button {
   width: 296px;
   height: 48px;
-  background-color: var(--cor-secondary);
+  background-color: var(--color-secondary);
   border-radius: 20px;
-  border: 2px solid var(--cor-secondary);
+  border: 2px solid var(--color-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,7 +217,7 @@ header {
   border-radius: 50px;
   margin: 20px;
   padding: 20px;
-  color: var(--cor-secondary);
+  color: var(--color-secondary);
   font-size: 32px;
 }
 
@@ -191,7 +242,7 @@ header {
 /************** section | video *********/
 
 .video{
-  padding: 0px 140px;
+  padding: 0px 14px;
 }
 
 /************** section | Blog *********/
