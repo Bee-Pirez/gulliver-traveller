@@ -18,6 +18,7 @@
   --color-X: #03011d;
   --color-text: rgb(255, 255, 255);
   --color-orange: rgb(254, 248, 230);
+  --color-semantic-yellow: #FFCA3A;
 }
 
 ul,
@@ -235,6 +236,10 @@ header {
 .emphasis_carousel {
 }
 
+
+.card-text i{
+  color: var(--color-semantic-yellow);
+}
 
 /************** section | video *********/
 
