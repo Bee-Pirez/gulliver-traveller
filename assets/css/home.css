@@ -307,27 +307,32 @@ header {
 
 /************** Article | Newsletter *********/
 
-.newsletter {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 166px 140px;
+article{
+
 }
 
-.newsletter_image {
+#newsletter{
+    padding: 166px 140px;
 }
 
-.image_mailbox {
+.newsletter_cont{
+
 }
 
-.newsletter_forms {
-  text-align: left;
+.newsletter_image{
+
 }
 
-.forms_text {
+.newsletter_form{
+
 }
 
-.forms_box {
+.form_text{
+
+}
+
+.form_section{
+
 }
 
 /************** Section | Button Top *********/
@@ -337,42 +342,41 @@ header {
 
 /************** Footer *********/
 
-.footer {
-  background-color: var(--color-X);
+footer{
+  background-color: var(--color-quaternary);
   padding: 67px 140px;
+}
+
+.footer_cont{
+
+}
+
+.footer_traveller{
+
+}
+
+.footer_traveller img{
+  margin-bottom: 10px;
+}
+
+.footer_inst{
+
+}
+
+.footer_help{
+
+}
+
+.footer_media{
+  
+}
+
+.footer_media ul{
   display: flex;
 }
 
-.footer_traveller {
-}
-
-.traveller_logo {
-  width: 150px;
-  padding-bottom: 27px;
-}
-
-.traveller_copyright {
-}
-
-.footer_inst {
-}
-
-.footer_inst ul {
-  display: block;
-}
-
-.footer_help {
-}
-
-.footer_help ul {
-  display: block;
-}
-
-.footer_media {
-}
-
-.footer_media ul {
-  display: flex;
+.footer_media li{
+  margin-right: 16px;
 }
 
 /************** Responsive *********/
