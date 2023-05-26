@@ -5,27 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Traveller - HOME</title>
-    <link rel="shortcut icon" href="./assets/images/logo/favicon-default-light.svg" type="image/x-icon"/>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/favicon-default-light.svg"
+      type="image/x-icon"
+    />
     <!-- Link bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <!-- Link font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Link css -->
     <link rel="stylesheet" href="./assets/css/home.css" />
   </head>
+
   <body>
     <!-- ctrl; (cabeçalho) -->
     <header>
       <nav class="navbar navbar-expand-lg p-4">
         <div class="container-fluid">
-          <a class="navbar-brand img-fluid" href="#"><img class="navbar-img" src="./assets/images/logo/logo-default-light.svg" alt="Logo Guilliver Traveller"/></a>
-          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand img-fluid" href="#"
+            ><img
+              class="navbar-img"
+              src="./assets/images/logo/logo-default-light.svg"
+              alt="Logo Guilliver Traveller"
+          /></a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Sobre</a>
@@ -72,31 +106,40 @@
       <section class="main_search">
         <div class="search_bar">
           <form name="dados" id="dados" action="" method="get">
-            <input class="input_search" type="search" name="" placeholder="Onde você está pensasndo em se aventurar?"/>
+            <input
+              class="input_search"
+              type="search"
+              name=""
+              placeholder="Onde você está pensando em se aventurar?"
+            />
             <input class="button_submit" value="Pesquisar" type="submit" />
           </form>
         </div>
       </section>
       <!-- ctrl; (Sobre Nós) -->
-      <div class="container-fluid p-5">
-        <div class="conteiner d-sm-flex align-items-center justify-content-between m-auto p-5 col-md-10 gap-5"></div>
-        <section class="main_aboutus text-light text-center text-sm-start">
-          <div class="conteiner d-sm-flex align-items-center justify-content-between m-auto py-5 col-md-10">
-            <img class="image_adventurous img-fluid" width="500" src="./assets/images/home/sobre.svg" alt="Imagem de um Aventureiro"/>
-            <div class="aboutus_text col-md-6">
-              <h2>Sobre Nós</h2>
-              <p>
-                Com paixão em expandir suas buscas e dividir todas as
-                informações para os outros viajantes poder se programar e
-                explorar o mundo como ele. Gulliver Traveller, jovem blogueiro
-                de 26 anos, criou o Traveller para que outros pessoas como ele,
-                amante de viajens, possam programar suas viajens em um só lugar.
-              </p>
-              <button class="text_button">Clique aqui para saber mais</button>
-            </div>
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./assets/images/home/sobre.svg" class="img-fluid" />
           </div>
-        </section>
+          <div class="align-self-center col-md-6">
+            <h2>Sobre nós</h2>
+            <p>
+              Com paixão em expandir suas buscas e dividir todas as informações
+              para os outros viajantes poder se programar e explorar o mundo
+              como ele. Gulliver Traveller, jovem blogueiro de 26 anos, criou o
+              Traveller para que outros pessoas como ele, amante de viajens,
+              possam programar suas viajens em um só lugar.
+            </p>
+            <a
+              href="#"
+              class="button_about btn btn-primary button button-primar"
+              >Saiba mais</a
+            >
+          </div>
+        </div>
       </div>
+
       <!-- ctrl; (Serviços) -->
       <section class="main_services">
         <div class="services_text">
@@ -119,17 +162,15 @@
               <div class="col-lg-4 col-sm-6 text-center">
                 <div class="item">
                   <i class="fa-solid fa-scroll bg-"></i>
-                  <h3>Busca</h3>
+                  <h3>Blog</h3>
                   <p>Veja a avaliação de outras pessoas.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 text-center">
                 <div class="item">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <h3>Busca</h3>
-                  <p>
-                    Criação/Busca por roteiros para todos os gostos e bolsos.
-                  </p>
+                  <i class="fa-sharp fa-solid fa-calendar-days"></i>
+                  <h3>Roteiro</h3>
+                  Criação/Busca por roteiros para todos os gostos e bolsos.
                 </div>
               </div>
             </div>
@@ -142,60 +183,60 @@
           <h2>Hospedagem em Destaque</h2>
           <p>Veja os lugares mais buscado pelos viajantes</p>
         </div>
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-          <div class="carousel-inner ">
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide"
+          data-bs-touch="false"
+        >
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="card-group">
                 <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Casa em Pretória</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Apartamento em Xangai</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card-group">
-                <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Casa em Melbourne</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
@@ -203,37 +244,123 @@
             <div class="carousel-item">
               <div class="card-group">
                 <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Apartamento em Nice</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Casa em Pretória</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="./assets/images/home/quarto.jpg" class="card-img-top" alt="...">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Apartamento em Xangai</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-group">
+                <div class="card">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Casa em Melbourne</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Apartamento em Nice</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./assets/images/home/quarto.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Casa em Pretória</h5>
+                    <p class="card-text">R$1.968,00</p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        ><i class="fa-solid fa-star"></i>4,96</small
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -243,7 +370,11 @@
       <section class="video container-fluid">
         <div class="p-5">
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/1tjuhCdWPB4" title="YouTube video" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/1tjuhCdWPB4"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -336,6 +467,7 @@
     <section class="button_top">
       <!-- ctrl; (Botão para o topo da página) -->
     </section>
+<<<<<<< HEAD
     <!-- ctrl; (footer) -->
     <footer class="">
       <div class="footer_cont row">
@@ -372,7 +504,10 @@
     </footer>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
