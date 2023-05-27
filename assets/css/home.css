@@ -15,10 +15,11 @@
 :root {
   --color-primary: rgb(14, 10, 126);
   --color-secondary: rgb(242, 92, 5);
-  --color-X: #03011d;
+  --color-X: rgb(3, 1, 29);
   --color-text: rgb(255, 255, 255);
   --color-orange: rgb(254, 248, 230);
-  --color-semantic-yellow: #FFCA3A;
+  --color-semantic-yellow: rgb(255, 202, 58);
+  --color-neutral: rgb(184, 178, 185);
 }
 
 ul,
@@ -80,11 +81,6 @@ header {
 .nav-signup a {
   text-decoration: none;
   color: white;
-}
-
-/************** Main *********/
-
-.main {
 }
 
 /************** section | Banner *********/
@@ -162,21 +158,7 @@ header {
   margin: 60px;
 }
 
-.search_bar {
-}
-
 /************** section | About Us *********/
-
-.main_aboutus {
-}
-
-.aboutus_image {
-}
-
-.image_adventurous {
-  width: 50%;
-  border-radius: 10px;
-}
 
 .aboutus_text {
   display: flex;
@@ -233,11 +215,7 @@ header {
   gap: 32px;
 }
 
-.emphasis_carousel {
-}
-
-
-.card-text i{
+.card-text i {
   color: var(--color-semantic-yellow);
 }
 
@@ -249,11 +227,6 @@ header {
 
 /************** section | Blog *********/
 
-.main_blog {
-  padding: 32px 140px;
-  display: block;
-}
-
 .blog_text {
   display: flex;
   width: 100%;
@@ -264,118 +237,47 @@ header {
   gap: 32px;
 }
 
-.blog_column {
-  width: 50%;
-}
-
-.blog_posts {
+.card-horizontal {
   display: flex;
+  flex-direction: row;
+}
+.card-horizontal img {
+  width: 200px;
+  height: auto;
 }
 
-.blog_post {
-}
-
-.post_image {
-}
-
-.image_landscape {
-}
-
-.post_information {
-}
-
-.information_title {
-}
-
-.information_subtitle {
-}
-
-.information_description {
+.card-body span {
+  color: var(--color-neutral);
 }
 
 .blog_emphasis {
-}
-
-.emphasis_title {
-}
-
-.emphasis_subtitle {
-}
-
-.emphasis_description {
+  width: 608px;
 }
 
 /************** Article | Newsletter *********/
 
-article{
-
-}
-
-#newsletter{
-    padding: 166px 140px;
-}
-
-.newsletter_cont{
-
-}
-
-.newsletter_image{
-
-}
-
-.newsletter_form{
-
-}
-
-.form_text{
-
-}
-
-.form_section{
-
+#newsletter {
+  padding: 166px 140px;
 }
 
 /************** Section | Button Top *********/
 
-.button_top {
-}
-
 /************** Footer *********/
 
-footer{
-  background-color: var(--color-quaternary);
+footer {
+  background-color: var(--color-X);
   padding: 67px 140px;
 }
 
-.footer_cont{
-
-}
-
-.footer_traveller{
-
-}
-
-.footer_traveller img{
+.footer_traveller img {
   margin-bottom: 10px;
 }
 
-.footer_inst{
-
-}
-
-.footer_help{
-
-}
-
-.footer_media{
-  
-}
-
-.footer_media ul{
+.footer_media ul {
   display: flex;
 }
 
-.footer_media li{
+.footer_media li {
   margin-right: 16px;
 }
 
@@ -392,7 +294,7 @@ footer{
   .cards-wrapper {
     display: flex;
   }
-  .card {
+  .hoteis-card {
     margin: 0 0.5em;
     width: calc(100% / 4);
     border: none;
@@ -419,7 +321,7 @@ footer{
     display: flex;
   }
 
-  .card {
+  .hoteis-card {
     margin: 0 0.5em;
     width: calc(100% / 2);
     border: none;
@@ -432,7 +334,7 @@ footer{
 }
 
 @media screen and (max-width: 567px) {
-  .card:not(:first-child) {
+  .hoteis-card:not(:first-child) {
     display: none;
   }
 
@@ -440,7 +342,7 @@ footer{
     display: flex;
   }
 
-  .card {
+  .hoteis-card {
     margin: 1em auto;
     width: calc(100% / 1, 5);
     border: none;
