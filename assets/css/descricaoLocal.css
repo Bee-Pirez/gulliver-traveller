@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  color: black;
+}
+
+body {
+  min-width: 429px;
+  width: 100%;
+}
+
+:root {
+  --color-primary: #0e0a7e;
+  --color-secondary: #f25c05;
+  --color-tertiary: #147e95;
+  --color-quaternary: #03011d;
+  --color-text: #ffffff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.city-description{
+  padding-top: 200px;
+}
