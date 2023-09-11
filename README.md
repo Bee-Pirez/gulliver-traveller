@@ -37,5 +37,5 @@ Saiba Mais: https://developers.google.com/maps/documentation/geocoding/overview?
 Saiba Mais: https://developers.google.com/maps/documentation/javascript/overview?hl=pt-br
 
 
-`OBS. No Momento, a implementação desses recurso (API) estão disponíveis nas páginas roteiro.html e descricaoLocal.html.`
+`OBS. No Momento, a implementação desses recursos (API) estão disponíveis nas páginas roteiro.html e descricaoLocal.html.`
 
