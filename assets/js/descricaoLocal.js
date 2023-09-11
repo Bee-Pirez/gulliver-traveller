@@ -10,7 +10,8 @@ function getCityParameter() {
 // Obter o nome da cidade da URL
 const cityName = getCityParameter();
 
-async function pegaCoordenada() {
+// Inserir Mapa
+async function getMapa() {
   var apiGeo = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${cityName}&key=AIzaSyA4qOJi5UVkVZlt35mMTyr2IXvEKIdJzHI`)
   var apiConvertida = await apiGeo.json();
   var latitude = apiConvertida.results[0].geometry.location.lat;
@@ -18,7 +19,7 @@ async function pegaCoordenada() {
   let map;
 
   async function initMap() {
-    //@ts-ignore
+
     const { Map } = await google.maps.importLibrary("maps");
 
     map = new Map(document.getElementById("map"), {
@@ -30,7 +31,7 @@ async function pegaCoordenada() {
   return initMap();
 };
 
-pegaCoordenada();
+getMapa();
 
 // Exibir o nome da cidade
 const cidadeElement = document.getElementById('cityName');
@@ -74,7 +75,7 @@ async function displayCityImage() {
     const data = await fetchCityImages(cityName);
 
     if (data.photos) {
-      const imageUrl = data.photos[0].src.medium;
+      const imageUrl = data.photos[0].src.original;
       const cityImage = document.getElementById('imagem-local');
       cityImage.src = imageUrl;
       cityImage.alt = cityName;
