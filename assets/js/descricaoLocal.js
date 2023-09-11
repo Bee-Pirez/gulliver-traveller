@@ -10,10 +10,33 @@ function getCityParameter() {
 // Obter o nome da cidade da URL
 const cityName = getCityParameter();
 
+async function pegaCoordenada() {
+  var apiGeo = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${cityName}&key=AIzaSyA4qOJi5UVkVZlt35mMTyr2IXvEKIdJzHI`)
+  var apiConvertida = await apiGeo.json();
+  var latitude = apiConvertida.results[0].geometry.location.lat;
+  var longitude = apiConvertida.results[0].geometry.location.lng;
+  let map;
+
+  async function initMap() {
+    //@ts-ignore
+    const { Map } = await google.maps.importLibrary("maps");
+
+    map = new Map(document.getElementById("map"), {
+      center: { lat: latitude, lng: longitude },
+      zoom: 8,
+    });
+  }
+
+  return initMap();
+};
+
+pegaCoordenada();
+
 // Exibir o nome da cidade
 const cidadeElement = document.getElementById('cityName');
 if (cityName) {
   cidadeElement.textContent = cityName;
+  cidadeElement.className = "cityName";
 } else {
   cidadeElement.textContent = 'Cidade não encontrada';
 }
@@ -55,6 +78,7 @@ async function displayCityImage() {
       const cityImage = document.getElementById('imagem-local');
       cityImage.src = imageUrl;
       cityImage.alt = cityName;
+      cityImage.className = "imagem-local";
     } else {
       console.error('Nenhuma imagem encontrada para a cidade:', cityName);
     }

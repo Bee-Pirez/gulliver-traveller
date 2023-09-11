@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +53,73 @@
       <h1 id="cityName"></h1>
       <img id="imagem-local" src="" alt="Imagem da Cidade">
     </section>
+    <section class="descricao-container">
+      <h3 class="descricao-tittle">Descrição</h3>
+      <p class="descricao-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+    </section>
+    <section class="container-curiosidades">
+      <div class="container-mapa" id="map"></div>
+      <div class="container-posts">
+        <h3 class="titulo-postagem-relacionadas">Postagens Relacionadas</h3>
+        <div class="posts">
+          <div class="container-post-dados">
+            <p class="post-tittle">Publicação #3440</p>
+            <p class="post-meta">27.02.2023|América do Sul|Brasil|Restaurante</p>
+            <p class="post-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+          <div class="container-post-imagem">
+            <img class="post-imagem" src="/assets/images/africa-do-sul/cidade-do-cabo/vista-do-quarto.png" alt="">
+          </div>
+        </div>
+        <div class="posts">
+          <div class="container-post-dados">
+            <p class="post-tittle">Publicação #3440</p>
+            <p class="post-meta">27.02.2023|América do Sul|Brasil|Restaurante</p>
+            <p class="post-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+          <div class="container-post-imagem">
+            <img class="post-imagem" src="/assets/images/africa-do-sul/cidade-do-cabo/vista-do-quarto.png" alt="">
+          </div>
+        </div>
+        <div class="posts">
+          <div class="container-post-dados">
+            <p class="post-tittle">Publicação #3440</p>
+            <p class="post-meta">27.02.2023|América do Sul|Brasil|Restaurante</p>
+            <p class="post-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+          <div class="container-post-imagem">
+            <img class="post-imagem" src="/assets/images/africa-do-sul/cidade-do-cabo/vista-do-quarto.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-funcoes">
+      <div class="container-informacoes-funcoes">
+        <div class="container-descricao-funcoes">
+          <h3 class="tittle-reserva-hotel">Reserve seu Hotel</h3>
+          <p class="descricao-reserva-hotel">Faça dos seus planos uma realidade: reserve o hotel perfeito agora mesmo!</p>
+          <button class="botao-laranja">Reservar Agora</button>
+        </div>
+        <div>
+          <img class="imagem-funcoes" src="/assets/images/roteiro/vector-mulher.png" alt="">
+        </div>
+      </div>
+      <div class="container-informacoes-funcoes">
+        <div>
+          <img class="imagem-funcoes" src="/assets/images/roteiro/vector-homem.png" alt="">
+        </div>
+        <div class="container-descricao-funcoes">
+          <h3 class="tittle-personalizar-roteiro">Personalize seu roteiro</h3>
+          <p class="descricao-personalizar-roteiro">Transforme sua jornada em realidade: crie seu roteiro de sonhos agora!</p>
+          <button class="botao-laranja">Criar Agora</button>
+        </div>
+      </div>
+    </section>
   </main>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4qOJi5UVkVZlt35mMTyr2IXvEKIdJzHI&callback=pegaCoordenada">
+  </script>
   <script src="../assets/js/descricaoLocal.js" type="module"></script>
 </body>
 </html>

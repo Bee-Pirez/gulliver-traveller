@@ -8,12 +8,18 @@
 }
 
 html {
-  color: black;
+  color: white;
+  background-image: linear-gradient(#050230, #168ca6);
 }
 
 body {
   min-width: 429px;
   width: 100%;
+}
+
+main{
+  width: 90%;
+  margin: auto;
 }
 
 :root {
@@ -42,4 +48,128 @@ p {
 
 .city-description{
   padding-top: 200px;
+  width: 100%;
+  margin: auto;
 }
+
+.cityName{
+  margin-bottom: 40px;
+}
+
+.imagem-local{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 80% 80%;
+  border-radius: 10px;
+}
+
+.descricao-container{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricao-tittle{
+  margin-bottom: 20px;
+}
+
+.container-curiosidades{
+  height: 500px;
+  display: flex;
+}
+
+.container-mapa{
+  width: 50%;
+  margin-right: 10%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 85%;
+  height: 100%;
+  border-radius: var(--border-radius);
+}
+
+.container-posts{
+  width: 50%;
+}
+
+.titulo-postagem-relacionadas{
+  margin-bottom: 20px;
+}
+
+.posts{
+  display: flex;
+  height: 33%;
+}
+
+.container-post-dados{
+  width: 60%;
+}
+
+.post-tittle{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post-meta{
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.post-descricao{
+  font-size: 15px;
+}
+
+.container-post-imagem{
+  width: 20%;
+}
+
+.post-imagem{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container-funcoes{
+  display: flex;
+  margin: 100px 0;
+}
+
+.container-informacoes-funcoes{
+  display: flex;
+  width: 50%;
+}
+
+.container-descricao-funcoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imagem-funcoes{
+  width: 80%;
+}
+  .botao-laranja{
+    width: 50%;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 8px 16px;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: 0.2s;
+  }
+  
+  .botao-laranja:hover{
+    background-color: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-text);
+  }
