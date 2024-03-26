@@ -3,7 +3,7 @@
 O Projeto Traveller visa transformar a visão ambiciosa de Gulliver Traveller, um blogueiro de viagens apaixonado, em uma plataforma funcional e colaborativa. Ele deseja criar um website completo que forneça informações abrangentes e detalhadas para turistas que desejam explorar destinos únicos e menos conhecidos.
 
 
-## Funcionalidades
+## Funcionalidades que idealizamos
 
 - `Busca por Destino:` A plataforma permitirá que os usuários pesquisem destinos de viagem, fornecendo informações sobre clima, temperatura, melhores épocas para visitar e pontos turísticos recomendados;
 
